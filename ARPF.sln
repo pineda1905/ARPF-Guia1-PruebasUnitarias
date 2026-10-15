@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARPF.Temperatura.UnitTestMS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARPF.Cadenas", "ARPF.Cadenas\ARPF.Cadenas.csproj", "{2B950BBF-608E-47C2-929E-B0E72FC1F033}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARPF.Cadenas.UnitTestAppxUnit", "ARPF.Cadenas.UnitTestAppxUnit\ARPF.Cadenas.UnitTestAppxUnit.csproj", "{D786CEA9-9A22-469B-82AF-77D6F6CF04EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{2B950BBF-608E-47C2-929E-B0E72FC1F033}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B950BBF-608E-47C2-929E-B0E72FC1F033}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B950BBF-608E-47C2-929E-B0E72FC1F033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D786CEA9-9A22-469B-82AF-77D6F6CF04EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D786CEA9-9A22-469B-82AF-77D6F6CF04EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D786CEA9-9A22-469B-82AF-77D6F6CF04EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D786CEA9-9A22-469B-82AF-77D6F6CF04EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
