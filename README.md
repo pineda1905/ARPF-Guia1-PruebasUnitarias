@@ -3,7 +3,8 @@
 **Estudiante:** Anderson Pineda (ARPF)  
 **Institución:** Escuela Especializada en Ingeniería ITCA-FEPADE / ESFE  
 **Solución:** `ARPF.sln`  
-**Repositorio:** [https://github.com/pineda1905/ARPF-Guia1-PruebasUnitarias](https://github.com/pineda1905/ARPF-Guia1-PruebasUnitarias)  
+**Repositorio GitHub:** [https://github.com/pineda1905/ARPF-Guia1-PruebasUnitarias](https://github.com/pineda1905/ARPF-Guia1-PruebasUnitarias)  
+**Proyecto Azure DevOps:** [https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales)  
 
 ---
 
@@ -32,22 +33,22 @@ ARPF/
 
 ---
 
-## 🧪 Detalle de los Ejercicios y Casos de Prueba
+## 🧪 Detalle de los Ejercicios y Casos de Prueba (Documentados en Azure DevOps)
 
 ### Ejercicio 1: Convertidor de Temperatura (`ARPF.Temperatura`)
 - **Framework de pruebas:** MSTest (`Microsoft.VisualStudio.TestTools.UnitTesting`)
 - **Estructura AAA:** Arrange, Act, Assert implementado en cada método de prueba.
 
-| ID Caso | Método Probado | Escenario / Entrada | Resultado Esperado | Framework |
-|---|---|---|---|---|
-| **CP01** | `CelsiusToFahrenheit` | Punto de congelación: `0 °C` | `32.0 °F` | MSTest |
-| **CP02** | `CelsiusToFahrenheit` | Punto de ebullición: `100 °C` | `212.0 °F` | MSTest |
-| **CP03** | `CelsiusToFahrenheit` | Temperatura de coincidencia: `-40 °C` | `-40.0 °F` | MSTest |
-| **CP04** | `CelsiusToFahrenheit` | Temperatura corporal promedio: `37 °C` | `98.6 °F` | MSTest |
-| **CP05** | `FahrenheitToCelsius` | Punto de congelación: `32 °F` | `0.0 °C` | MSTest |
-| **CP06** | `FahrenheitToCelsius` | Punto de ebullición: `212 °F` | `100.0 °C` | MSTest |
-| **CP07** | `FahrenheitToCelsius` | Temperatura de coincidencia: `-40 °F` | `-40.0 °C` | MSTest |
-| **CP08** | `FahrenheitToCelsius` | Temperatura corporal: `98.6 °F` | `37.0 °C` | MSTest |
+| ID Caso | Azure DevOps ID | Método Probado | Escenario / Entrada | Resultado Esperado | Framework |
+|---|---|---|---|---|---|
+| **CP01** | [399](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems/edit/399) | `CelsiusToFahrenheit` | Punto de congelación: `0 °C` | `32.0 °F` | MSTest |
+| **CP02** | [400](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems/edit/400) | `CelsiusToFahrenheit` | Punto de ebullición: `100 °C` | `212.0 °F` | MSTest |
+| **CP03** | [401](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems/edit/401) | `CelsiusToFahrenheit` | Temperatura de coincidencia: `-40 °C` | `-40.0 °F` | MSTest |
+| **CP04** | [402](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems/edit/402) | `CelsiusToFahrenheit` | Temperatura corporal promedio: `37 °C` | `98.6 °F` | MSTest |
+| **CP05** | [403](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems/edit/403) | `FahrenheitToCelsius` | Punto de congelación: `32 °F` | `0.0 °C` | MSTest |
+| **CP06** | [404](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems/edit/404) | `FahrenheitToCelsius` | Punto de ebullición: `212 °F` | `100.0 °C` | MSTest |
+| **CP07** | [405](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems/edit/405) | `FahrenheitToCelsius` | Temperatura de coincidencia: `-40 °F` | `-40.0 °C` | MSTest |
+| **CP08** | [406](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems/edit/406) | `FahrenheitToCelsius` | Temperatura corporal: `98.6 °F` | `37.0 °C` | MSTest |
 
 ---
 
@@ -55,18 +56,18 @@ ARPF/
 - **Framework de pruebas:** xUnit (`Xunit`)
 - **Características:** Uso de pruebas simples `[Fact]` y pruebas parametrizadas `[Theory]` con datos dinámicos `[InlineData]`.
 
-| ID Caso | Método Probado | Escenario / Entrada | Resultado Esperado | Tipo xUnit |
-|---|---|---|---|---|
-| **CP09** | `ReverseString` | Texto estándar: `"Hola Mundo"` | `"odnuM aloH"` | `[Fact]` |
-| **CP10** | `ReverseString` | Palíndromo: `"reconocer"` | `"reconocer"` | `[Fact]` |
-| **CP11** | `ReverseString` | Cadena vacía: `""` | `""` | `[Fact]` |
-| **CP12** | `ReverseString` | Parámetro nulo: `null` | Lanza `ArgumentNullException` | `[Fact]` |
-| **CP13** | `RemoveSpaces` | Frase con espacios: `"Hola Mundo .NET"` | `"HolaMundo.NET"` | `[Fact]` |
-| **CP14** | `RemoveSpaces` | Espacios múltiples y bordes: `"  Pruebas   Unitarias   xUnit  "` | `"PruebasUnitariasxUnit"` | `[Fact]` |
-| **CP15** | `RemoveSpaces` | Cadena sin espacios: `"CSharp8"` | `"CSharp8"` | `[Fact]` |
-| **CP16** | `RemoveSpaces` | Parámetro nulo: `null` | Lanza `ArgumentNullException` | `[Fact]` |
-| **CP17** | `ReverseString` | Datos múltiples: `"esfe"`, `"dotnet"`, `"12345"` | `"efse"`, `"tentod"`, `"54321"` | `[Theory]` |
-| **CP18** | `RemoveSpaces` | Datos múltiples: `"a b c d"`, `"  espacios  "`, `"sin_espacio"` | `"abcd"`, `"espacios"`, `"sin_espacio"` | `[Theory]` |
+| ID Caso | Azure DevOps ID | Método Probado | Escenario / Entrada | Resultado Esperado | Tipo xUnit |
+|---|---|---|---|---|---|
+| **CP09** | [407](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems/edit/407) | `ReverseString` | Texto estándar: `"Hola Mundo"` | `"odnuM aloH"` | `[Fact]` |
+| **CP10** | [408](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems/edit/408) | `ReverseString` | Palíndromo: `"reconocer"` | `"reconocer"` | `[Fact]` |
+| **CP11** | [409](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems/edit/409) | `ReverseString` | Cadena vacía: `""` | `""` | `[Fact]` |
+| **CP12** | [410](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems/edit/410) | `ReverseString` | Parámetro nulo: `null` | Lanza `ArgumentNullException` | `[Fact]` |
+| **CP13** | [411](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems/edit/411) | `RemoveSpaces` | Frase con espacios: `"Hola Mundo .NET"` | `"HolaMundo.NET"` | `[Fact]` |
+| **CP14** | [412](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems/edit/412) | `RemoveSpaces` | Espacios múltiples y bordes: `"  Pruebas   Unitarias   xUnit  "` | `"PruebasUnitariasxUnit"` | `[Fact]` |
+| **CP15** | [413](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems/edit/413) | `RemoveSpaces` | Cadena sin espacios: `"CSharp8"` | `"CSharp8"` | `[Fact]` |
+| **CP16** | [414](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems/edit/414) | `RemoveSpaces` | Parámetro nulo: `null` | Lanza `ArgumentNullException` | `[Fact]` |
+| **CP17** | [415](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems/edit/415) | `ReverseString` | Datos múltiples: `"esfe"`, `"dotnet"`, `"12345"` | `"efse"`, `"tentod"`, `"54321"` | `[Theory]` |
+| **CP18** | [416](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems/edit/416) | `RemoveSpaces` | Datos múltiples: `"a b c d"`, `"  espacios  "`, `"sin_espacio"` | `"abcd"`, `"espacios"`, `"sin_espacio"` | `[Theory]` |
 
 ---
 
@@ -91,7 +92,7 @@ dotnet test ARPF.sln
 
 ## 📌 Documentación en Azure DevOps
 
-Los 18 casos de prueba documentados en la tabla anterior están estructurados para su registro directo en **Azure DevOps** en el módulo de **Test Plans / Boards (Work Items - Test Case)**, detallando:
+Los 18 casos de prueba han sido registrados y estructurados en **Azure DevOps** en el módulo de **Boards (Work Items - Test Case)** del proyecto [Guia1-PruebasUnitarias-Iniciales](https://dev.azure.com/arpineda15190/Guia1-PruebasUnitarias-Iniciales/_workitems), detallando:
 - **Título del Caso de Prueba**
 - **Precondiciones**
 - **Pasos detallados (Arrange, Act)**
