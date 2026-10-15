@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARPF.Temperatura", "ARPF.Temperatura\ARPF.Temperatura.csproj", "{B99C9B67-0EC8-47DC-9C78-20EDA56D21DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARPF.Temperatura.UnitTestMSTest", "ARPF.Temperatura.UnitTestMSTest\ARPF.Temperatura.UnitTestMSTest.csproj", "{4F5152CB-7B99-44DA-A79A-3C9A08066C60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{B99C9B67-0EC8-47DC-9C78-20EDA56D21DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B99C9B67-0EC8-47DC-9C78-20EDA56D21DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B99C9B67-0EC8-47DC-9C78-20EDA56D21DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F5152CB-7B99-44DA-A79A-3C9A08066C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F5152CB-7B99-44DA-A79A-3C9A08066C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F5152CB-7B99-44DA-A79A-3C9A08066C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F5152CB-7B99-44DA-A79A-3C9A08066C60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
